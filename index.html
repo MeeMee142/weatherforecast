@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Example</title>
+    <!--    fontawesome css1-->
+    <link href="../libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css">
+    <!--    Logo-->
+    <link href="img/iconrain.png" rel="icon" type="image/css" />
+    <link href="css/style3.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!--Start Head ( Date/Time/Search)-->
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div id="time" class="time">
+                    12:30<sapn id="am-pm">PM</sapn>  
+                </div>
+                <div id="date" class="date">
+                    Monday, 25 May
+                </div>
+            </div><br/>
+
+            <div class="searchInputBox">
+                <input type="text" name="search" id="input-box" class="search-btn" placeholder="Search City....." autocomplete="off"/>
+            </div>
+        </div>
+    </div>
+<!--End Head ( Date/Time/Search)-->
+
+<!--Start Weather Forecast-->
+<div class="app-main">
+    <div class="weather-body">
+        <div class="location-details">
+            <div id="city" class="city">Mandalay, MM</div>
+            <div class="today">Today</div>
+        </div>
+
+        <div class="weather-status">
+            <div id="temp" class="temp">34&deg;C</div>
+            <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
+            <div id="weather" class="weather">
+               <div id="img"> </div>      
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Weather Forecast-->
+
+<!--Start Node -->
+<div id="modal">
+    <div id="inner_modal">
+      <textarea placeholder="Note..." id="user_input" maxlength="160" style="transform: translateY(-200px);"></textarea>
+      <i class="far fa-times-circle" id="hide" style="transform: translateX(11px) translateY(-180px);"></i>
+    </div>
+  </div>
+  
+      <div class="container">
+        <div id="header">  
+          <button id="add" class="add">Add Note</button>
+        </div>
+      </div>
+   
+    <section>
+      <div class="container">
+        <div id="all_notes"> </div>
+      </div>
+    </section>
+<!--End Node-->
+
+<script src="js/app3.js" type="text/javascript"></script>
+</body>
+</html>
